@@ -2,6 +2,7 @@
 # высота заданы с помощью функции input . Необходимо, как и раньше, рассчитать площадь,
 # но требуется строковый тип преобразовать в численный (float) при получении значения через input
 
-length =
-width =
-area =
+length = input('Input length: ')
+width = input('Input width: ')
+area = float(length) * float(width)
+print(area)
