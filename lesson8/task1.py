@@ -16,3 +16,6 @@ def format_string(string, length):
 
 
 print(format_string('aaa', 9))
+mylist = [1, 2, 3, 4, 5, 6, 7, 8]
+print(mylist[mylist[2]] * 2)
+
