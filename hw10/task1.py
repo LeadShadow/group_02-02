@@ -2,4 +2,15 @@
 # прежде чем начать работать с данными дальше. Напишите функцию prepare_data, которая удаляет
 # из переданного списка наибольшее и наименьшее значение, сортирует его в порядке возрастания
 # и возвращает измененный список в качестве результата.
-def prepare_data(data):
+
+# [1, 2, 3, 4, 5]
+# max, min
+def prepare_data(data: list) -> list:
+    data.remove(min(data))  # min(data) -> 1
+    data.remove(max(data))  # max(data) -> 5
+    data.sort()
+    return data
+
+
+if __name__ == "__main__":
+    print(prepare_data([1, 3, 2, 4, 5]))
