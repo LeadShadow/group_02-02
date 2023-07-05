@@ -52,7 +52,7 @@ print(s.rfind('e', start, end))
 
 # розбиття рядка на декілька підрядків
 s = 'I am learning strings in Python. Some new methods got now'
-sentences = s.split('. ')
+sentences = s.split('. ')  # ['I am learning strings in Python', 'Some new methods got now']
 print(sentences)
 print(sentences[0])
 print(sentences[1])
