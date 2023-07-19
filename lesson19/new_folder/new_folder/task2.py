@@ -8,9 +8,3 @@
 # with и режим "w"
 # запись нового содержимого файла output должна быть единоразовая и использовать метод write
 
-# source.txt -> Hello world 1
-# Hello world 1
-# Hello world 2
-# Hello world 3
-# re.sub(r'\d', '')
-# line.replace('1', '').replace('2', '') ...
