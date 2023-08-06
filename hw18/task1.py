@@ -23,8 +23,20 @@
 # при сохранении строка файла кодируется методом encode
 # при записи строк используем только метод write
 # архив должен быть в формате zip с именем 'backup_folder' созданный при помощи make_archive.
-
+from pathlib import Path
 import shutil
 
+# C:\Users\pc\Desktop\заняття\group_02-02\hw18 -> path
+# task1.py -> file_name
+def create_backup(path: Path, file_name: Path, employee_residence: dict):
+    with open(path / file_name, 'wb') as bfile:
+        for key, value in employee_residence.items():
+            bfile.write(f'{key} {value}\n'.encode())
 
-def create_backup(path, file_name, employee_residence):
+    return shutil.make_archive('backup_folder', 'zip', path)
+
+
+
+if __name__ == "__main__":
+    create_backup(Path('C:/Users/pc/Desktop/заняття/group_02-02/hw18'), Path('myfile.bin'), {'Sasha': 'Ukraine',
+                                                                                             'Liza': 'Litva'})
