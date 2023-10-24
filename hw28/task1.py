@@ -18,3 +18,14 @@ class Animal:
 
     def change_weight(self, weight):
         self.weight = weight
+
+    def change_color(self, color):
+        self.color = color
+
+
+animal = Animal('Bark', 10)
+print(animal.nickname)
+print(animal.weight)
+print(animal.color)
+animal.change_color(color='red')
+print(animal.color)
