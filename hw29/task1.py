@@ -20,3 +20,21 @@ class Cat(Animal):
 class Dog(Animal):
     def say(self):
         return "Woof"
+
+
+class CatDog(Cat, Dog):
+    def __call__(self, *args, **kwargs):
+        return f'{self.nickname}-{self.weight}'
+
+
+class DogCat(Dog, Cat):
+    def __call__(self, *args, **kwargs):
+        return f'{self.nickname}-{self.weight}'
+
+
+catdog = CatDog('Tom', 4)
+print(catdog())
+print(catdog.say())
+dogcat = DogCat('Barsik', 10)
+print(dogcat.say())
+print(dogcat())

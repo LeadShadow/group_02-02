@@ -27,7 +27,7 @@ from pathlib import Path
 import shutil
 
 # C:\Users\pc\Desktop\заняття\group_02-02\hw18 -> path
-# task1.py -> file_name
+# task2.py -> file_name
 def create_backup(path: Path, file_name: Path, employee_residence: dict):
     with open(path / file_name, 'wb') as bfile:
         for key, value in employee_residence.items():
