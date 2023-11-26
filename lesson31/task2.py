@@ -35,3 +35,8 @@ class Point:
 point = Point("a", 10)
 print(point.x)  # None
 print(point.y)  # 10
+
+
+a = 10;
+b = 20;
+print(a, b)
